@@ -3,7 +3,7 @@
 {% block content %}
 
 {{form.media}}
-    <div class="container" style="background-color: #343148;">
+    <div class="container" style="background: linear-gradient(141deg,#056b5b 35%,#9dd85c 103%);">
         <form action="{% url 'profile' %}" method="post" enctype="multipart/form-data">
             {% csrf_token %}
             {% bootstrap_form form %}
